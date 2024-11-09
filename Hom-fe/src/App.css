@@ -1,0 +1,124 @@
+/* Navbar Styling */
+.navbar {
+  background-color: rgba(249, 232, 225, 0.9);
+  color: #333;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+/* Carousel Styling */
+.carousel-container {
+  padding: 50px 20px;
+  text-align:center;
+  padding-top: 90px;
+  margin-top: 30px;
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  gap: 20px;
+  padding: 10px;
+  background-color: #fff;
+  color: #333;
+}
+
+.carousel-item {
+  flex: 1 0 22%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+}
+
+.carousel-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Radio Buttons for Carousel Navigation */
+.carousel-nav {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  
+}
+
+.carousel-nav-btn input {
+  appearance: none;
+  background-color: #fff;
+  border: 2px solid #e91e63;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.carousel-nav-btn input:checked {
+  background-color: #e91e63;
+  border-color: #e91e63;
+}
+
+.carousel-nav-btn input:hover {
+  background-color: #f8bbd0;
+}
+
+/* Product List */
+.product-list {
+  padding-top: 90px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 30px;
+}
+
+/* Product Cards */
+.product-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 12px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.product-item h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.product-item p {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.price {
+  font-weight: bold;
+  color: #e91e63;
+  font-size: 1rem;
+  margin-top: 8px;
+}
+h3{
+  color: #333;
+}
